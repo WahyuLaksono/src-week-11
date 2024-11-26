@@ -68,3 +68,17 @@ Perbedaan Utama:
 
 # Soal 7
 ![Soal 7](assets/praktikum/soal7.png)
+
+# Soal 8
+1. Kompleksitas
+    - FutureGroup: Kompleks, manual
+    - Future.wait: Sederhana, otomatis
+2. Penggunaan
+    - FutureGroup: Memerlukan adding dan closing
+    - Future.wait: Langsung dapat digunakan
+3. Performa
+    - FutureGroup: Sedikit overhead
+    - Future.wait: Lebih efisien
+4. Kemudahan Penggunaan
+    - FutureGroup: Membutuhkan lebih banyak kode
+    - Future.wait: Minimal kode
