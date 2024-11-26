@@ -7,7 +7,7 @@ A new Flutter project.
 # Wahyu Laksono Saputra || 362358302107
 
 # Soal 1
-![alt text](assets/praktikum/soal1png)
+![alt text](assets/praktikum/soal1.png)
 
 # Soal 2
 ![alt text](assets/praktikum/soal2.png)
@@ -19,3 +19,19 @@ catchError((_) {..}): Ini adalah callback yang akan dijalankan jika terjadi kesa
 
 ![alt text](assets/praktikum/soal3.png)
 
+# Soal 4
+Langkah 1 :
+- Tiga method async yang masing-masing mengembalikan nilai integer (1, 2, 3)
+- Setiap method menggunakan Future.delayed() untuk mensimulasikan operasi asinkron yang memakan waktu 3 detik
+- await digunakan untuk menunda eksekusi sampai Future selesai
+- Setelah penundaan 3 detik, method akan mengembalikan nilai integer yang berbeda
+
+Langkah 2 :
+- Method count() adalah method async yang menggabungkan hasil dari tiga method sebelumnya
+- total = await returnOneAsync() akan menunggu method pertama selesai dan menyimpan hasilnya (1)
+- total += await returnTwoAsync() akan menunggu method kedua selesai dan menambahkan hasilnya (1 + 2 = 3)
+- total += await returnThreeAsync() akan menunggu method ketiga selesai dan menambahkan hasilnya (3 + 3 = 6)
+- setState() digunakan untuk memperbarui UI dengan nilai total yang telah dihitung
+- Hasilnya akan disimpan sebagai string di variabel result
+
+![alt text](assets/praktikum/soal4.png)
