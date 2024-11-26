@@ -65,3 +65,6 @@ Perbedaan Utama:
     - langkah 5-6 : completer.complete() dan completer.completeError()
 
 ![Soal 6](assets/praktikum/soal6.png)
+
+# Soal 7
+![Soal 7](assets/praktikum/soal7.png)
