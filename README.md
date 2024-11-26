@@ -52,3 +52,16 @@ Langkah 2 :
 
 ![Soal 5](assets/praktikum/soal5.png)
 
+# Soal 6
+Perbedaan Utama:
+1. Error Handling
+    - langkah 2 : Tidak ada mekanisme error
+    - langkah 5-6 : Memiliki mekanisme tangani error
+2. Kompleksitas
+    - langkah 2 : Sederhana, linear
+    - langkah 5-6 : Kompleks, mempertimbangkan berbagai skenario
+3. Mekanisme Penyelesaian
+    - langkah2 : completer.complete()
+    - langkah 5-6 : completer.complete() dan completer.completeError()
+
+![Soal 6](assets/praktikum/soal6.png)
