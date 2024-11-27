@@ -40,7 +40,7 @@ Langkah 2 :
 - late Completer completer;
 - Mendeklarasikan variabel Completer yang akan diinisialisasi nanti
 - Keyword late memungkinkan variabel dideklarasikan tanpa langsung diinisialisasi
-- getNumber() method:
+-  getNumber() method:
 - Membuat instance Completer baru
 - Memanggil method calculate()
 - Mengembalikan future dari completer
@@ -82,3 +82,6 @@ Perbedaan Utama:
 4. Kemudahan Penggunaan
     - FutureGroup: Membutuhkan lebih banyak kode
     - Future.wait: Minimal kode
+
+# Soal 9
+![Soal 8](assets/praktikum/soal9.png)
