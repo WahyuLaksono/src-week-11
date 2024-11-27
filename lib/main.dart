@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:async/async.dart';
+// import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
@@ -94,6 +94,7 @@ class _FuturePageState extends State<FuturePage> {
     // futureGroup.add(returnTwoAsync());
     // futureGroup.add(returnThreeAsync());
     // futureGroup.close();
+    
     futures.then((List <int> value) {
       int total = 0;
       for (var element in value) {
@@ -103,6 +104,11 @@ class _FuturePageState extends State<FuturePage> {
         result = total.toString();
       });
     });
+  }
+
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrible happened');
   }
 
 
@@ -138,7 +144,18 @@ class _FuturePageState extends State<FuturePage> {
               //   result = 'An error occured';
               // });
 
-              returnFG();
+              // returnFG();
+
+              returnError()
+                .then((value) {
+                  setState(() {
+                    result = 'Succes';
+                  });
+                }).catchError((onError) {
+                  setState(() {
+                    result = onError.toString();
+                  });
+                }).whenComplete(() => print('Complete'));
             },
           ),
           const Spacer(),
